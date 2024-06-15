@@ -63,7 +63,7 @@ export default function Navbar() {
     return (
         <header className={`${navActive ? 'bg-white opacity-90' : 'bg-white opacity-80'} shadow-md border-2 rounded-br-full rounded-bl-full fixed z-[2] w-full transition duration-150 py-4`}>
             <nav
-                className='mx-auto flex max-w-7xl items-center justify-between font-raleway font-black sm:px-4 lg:px-16'
+                className='mx-auto flex max-w-7xl items-center justify-between font-raleway font-black sm:px-8 lg:px-16'
                 aria-label='Global'>
                 <div className='flex'>
                     <a href='/'>
@@ -71,7 +71,7 @@ export default function Navbar() {
                             className='relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert'
                             src='/maul.png'
                             alt='Maul Logo'
-                            width={80}
+                            width={70}
                             height={15}
                             quality={100}
                             priority
@@ -79,7 +79,7 @@ export default function Navbar() {
                     </a>
                 </div>
 
-                <div className='flex px-6 lg:hidden'>
+                <div className='flex px-2 lg:hidden'>
                     <button
                         type='button'
                         className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700'
@@ -107,7 +107,7 @@ export default function Navbar() {
                                 className='relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert'
                                 src='/maul.png'
                                 alt='Maul Logo'
-                                width={80}
+                                width={60}
                                 height={15}
                                 priority
                             />
