@@ -61,22 +61,23 @@ export default function Navbar() {
     }, []);
 
     return (
-        <header className={`${navActive ? 'bg-white opacity-100' : 'bg-white opacity-80'} shadow-xl border-2 rounded-br-xl rounded-bl-xl fixed z-[2] w-full transition duration-150 py-4`}>
+        <header className={`${navActive ? 'bg-white opacity-100' : 'bg-white opacity-80'} shadow-xl border-2 rounded-br-xl rounded-bl-xl fixed z-[2] w-full transition duration-150 py-2`}>
             <nav
                 className='mx-auto flex max-w-7xl items-center justify-between font-raleway font-black sm:px-4 lg:px-4'
                 aria-label='Global'>
-                <div className='flex'>
+                <div className='flex items-end gap-2'>
                     <a href='/'>
                         <Image
-                            className='relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert'
-                            src='/maul.png'
+                            className='relative'
+                            src='/logo maulana.png'
                             alt='Maul Logo'
-                            width={70}
+                            width={45}
                             height={15}
                             quality={100}
                             priority
                         />
                     </a>
+                    <p className='text-purple-1 text-md font-unbounded'>portfolio</p>
                 </div>
 
                 <div className='flex px-2 lg:hidden'>
