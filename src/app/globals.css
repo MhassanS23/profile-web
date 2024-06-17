@@ -23,22 +23,33 @@ body {
 }
 
 .btn-tanda-cast .swiper-prev{
-    font-size: 1rem;
     color: white;
     background: #100d1f;
     border: 1px solid white;
-    padding: 0.05rem 0.3rem;  
-    border-radius: 100%;
+    padding-left: 1rem;  
+    padding-right: 1rem;  
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-radius: 1rem;
     cursor: pointer;
   }
   .btn-tanda-cast .swiper-next{
-    font-size: 1rem;
     color: #100d1f;
     background: white;
     border: 1px solid #100d1f;
-    padding: 0.05rem 0.3rem; 
-    border-radius: 100%;
+    padding-left: 1rem;  
+    padding-right: 1rem; 
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-radius: 1rem;
     cursor: pointer;
+  }
+  #custom-swiperss{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 1rem;
   }
 
 /* FOOTER */

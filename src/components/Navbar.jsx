@@ -63,7 +63,7 @@ export default function Navbar() {
     return (
         <header className={`${navActive ? 'bg-white opacity-100' : 'bg-white opacity-80'} shadow-xl border-2 rounded-br-xl rounded-bl-xl fixed z-[2] w-full transition duration-150 py-4`}>
             <nav
-                className='mx-auto flex max-w-7xl items-center justify-between font-raleway font-black sm:px-8 lg:px-16'
+                className='mx-auto flex max-w-7xl items-center justify-between font-raleway font-black sm:px-4 lg:px-4'
                 aria-label='Global'>
                 <div className='flex'>
                     <a href='/'>

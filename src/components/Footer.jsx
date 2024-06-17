@@ -29,7 +29,7 @@ export default function Footer() {
 
             <div className='footer-3'>
                 <p>Connect with us</p>
-                <ul>
+                {/* <ul>
                     <li>
                         <a href='https://www.facebook.com' target='_blank'>
                             <Image src='' />
@@ -55,12 +55,12 @@ export default function Footer() {
                             <Image src='' />
                         </a>
                     </li>
-                </ul>
+                </ul> */}
             </div>
 
             <div className='footer-4'>
                 <p>Copyright Binar 2022</p>
-                <a href=''>Sewo Mobil</a>
+                {/* <a href=''>Sewo Mobil</a> */}
             </div>
         </footer>
     );

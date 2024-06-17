@@ -25,6 +25,7 @@ export default function SwiperProject() {
             {navigationEnabled && (
                 <Swiper
                     slidesPerView={1}
+                    style={{ padding: '1rem 0.5rem 1rem 0rem', borderRadius: '1rem' }}
                     spaceBetween={10}
                     navigation={{
                         prevEl: prevRef.current,
@@ -45,23 +46,25 @@ export default function SwiperProject() {
                         },
                     }}
                 >
-                    <SwiperSlide className='shadow-purple-1 rounded shadow-lg'>
-                        <Image
-                            src='/project-1.png'
-                            className='w-full rounded'
-                            alt='Project 1'
-                            width={420}
-                            height={320}
-                            quality={90}
-                            priority
-                        />
-                        <div className='flex flex-col items-center justify-center gap-2 px-4 py-2 text-center'>
-                            <p className='text-xl font-bold'>Movie Project</p>
-                            <p className='text-justify text-base text-gray-700'>
-                                lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
-                                loremloremloremlorem
-                            </p>
-                            <FaReact size={'1rem'} className='mb-6 text-center' />
+                    <SwiperSlide className='h-full w-full'>
+                        <div className='shadow-purple-1 rounded shadow-lg h-[90%]'>
+                            <Image
+                                src='/project-1.png'
+                                className='w-full rounded'
+                                alt='Project 1'
+                                width={420}
+                                height={320}
+                                quality={90}
+                                priority
+                            />
+                            <div className='flex flex-col items-center justify-center gap-2 px-4 py-2 text-center'>
+                                <p className='text-xl font-bold'>Movie Project</p>
+                                <p className='text-justify text-base text-gray-700'>
+                                    lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+                                    loremloremloremlorem
+                                </p>
+                                <FaReact size={'1rem'} className='text-center' />
+                            </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className='shadow-purple-1 rounded shadow-lg'>
@@ -80,7 +83,7 @@ export default function SwiperProject() {
                                 lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
                                 loremloremloremlorem
                             </p>
-                            <FaReact size={'1rem'} className='mb-6 text-center' />
+                            <FaReact size={'1rem'} className='text-center' />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className='shadow-purple-1 rounded shadow-lg'>
@@ -99,17 +102,17 @@ export default function SwiperProject() {
                                 lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
                                 loremloremloremlorem
                             </p>
-                            <FaReact size={'1rem'} className='mb-6 text-center' />
+                            <FaReact size={'1rem'} className='text-center' />
                         </div>
                     </SwiperSlide>
                 </Swiper>
             )}
-            <div className='btn-tanda-cast flex items-center justify-center'>
-                <div ref={prevRef} className='swiper-prev'>
-                    <FaChevronLeft />
+            <div className='btn-tanda-cast mt-3 flex items-center justify-center gap-2'>
+                <div ref={prevRef} className='swiper-prev shadow-lg shadow-purple'>
+                    <p className='text-sm font-bold'>Prev</p>
                 </div>
-                <div ref={nextRef} className='swiper-next'>
-                    <FaChevronRight className='' />
+                <div ref={nextRef} className='swiper-next shadow-lg shadow-purple'>
+                    <p className='text-sm font-bold'>Next</p>
                 </div>
             </div>
         </>
