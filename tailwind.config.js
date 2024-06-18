@@ -16,7 +16,15 @@ module.exports = {
       },
       colors: {
         'blue-1': '#100d1f',
+        'blue-2': '#3eaffa',
+        'blue-3': '#76f5f1',
+        'blue-4': '#184ade',
+        'yellow-1': '#fccb28',
+        'red-1': '#de1c18',
+        'green-1': '#04db16',
+        'green-2': '#16fa1a',
         'purple-1': '#8c52ff',
+        'orange-1': '#fa5316',
       },
       fontFamily:{
         unbounded: ['var(--font-unbounded)'],

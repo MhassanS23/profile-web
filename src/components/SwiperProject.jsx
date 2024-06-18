@@ -8,8 +8,11 @@ import 'swiper/css/navigation';
 import Image from 'next/image';
 
 // ICONS
-import { FaReact } from 'react-icons/fa';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaReact, FaBootstrap, FaCss3Alt } from 'react-icons/fa';
+import { TbBrandJavascript } from 'react-icons/tb';
+import { SiChakraui, SiJavascript } from 'react-icons/si';
+import { IoLogoFirebase } from 'react-icons/io5';
+import { SiSwiper, SiRedux } from 'react-icons/si';
 
 export default function SwiperProject() {
     const prevRef = useRef(null);
@@ -44,13 +47,12 @@ export default function SwiperProject() {
                             slidesPerView: 2,
                             spaceBetween: 20,
                         },
-                    }}
-                >
+                    }}>
                     <SwiperSlide className='h-full w-full'>
-                        <div className='shadow-purple-1 rounded shadow-lg h-[90%]'>
+                        <div className='h-[90%] rounded shadow-lg shadow-purple-1'>
                             <Image
-                                src='/project-1.png'
-                                className='w-full rounded'
+                                src='/TODO.png'
+                                className='w-full rounded sm:h-[10rem] lg:h-[15rem]'
                                 alt='Project 1'
                                 width={420}
                                 height={320}
@@ -58,19 +60,36 @@ export default function SwiperProject() {
                                 priority
                             />
                             <div className='flex flex-col items-center justify-center gap-2 px-4 py-2 text-center'>
-                                <p className='text-xl font-bold'>Movie Project</p>
-                                <p className='text-justify text-base text-gray-700'>
-                                    lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
-                                    loremloremloremlorem
+                                <p className='text-xl font-bold'>Todo List</p>
+                                <p className='text-center text-base text-gray-700'>
+                                    This website is used to make it easier for us to organize our activities by listing our
+                                    activities in a day.
                                 </p>
-                                <FaReact size={'1rem'} className='text-center' />
+                                <div className='mb-4 flex flex-row flex-wrap items-center justify-center gap-2'>
+                                    <div
+                                        className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-purple shadow-blue-1`}>
+                                        <FaReact size={'1.2rem'} className='text-blue-1' />
+                                    </div>
+                                    <div
+                                        className={`text-md shadow-yellow-1 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                        <SiJavascript size={'1.2rem'} className='text-yellow-1' />
+                                    </div>
+                                    <div
+                                        className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-purple shadow-purple-1`}>
+                                        <FaBootstrap size={'1.2rem'} className='text-purple-1' />
+                                    </div>
+                                    <div
+                                        className={`text-md shadow-blue-2 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                        <FaCss3Alt size={'1.2rem'} className='text-blue-2' />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide className='shadow-purple-1 rounded shadow-lg'>
+                    <SwiperSlide className='rounded shadow-lg shadow-purple-1'>
                         <Image
                             src='/project-1.png'
-                            className='w-full rounded'
+                            className='w-full rounded sm:h-[10rem] lg:h-[15rem]'
                             alt='Project 1'
                             width={420}
                             height={320}
@@ -79,17 +98,45 @@ export default function SwiperProject() {
                         />
                         <div className='flex flex-col items-center justify-center gap-2 px-4 py-2 text-center'>
                             <p className='text-xl font-bold'>Movie Project</p>
-                            <p className='text-justify text-base text-gray-700'>
-                                lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
-                                loremloremloremlorem
+                            <p className='text-center text-base text-gray-700'>
+                                This project is a website that makes it easy for us to find information about a movie.
                             </p>
-                            <FaReact size={'1rem'} className='text-center' />
+                            <div className='mb-4 flex flex-row flex-wrap items-center justify-center gap-2'>
+                                <div
+                                    className={`text-md shadow-blue-2 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    <FaCss3Alt size={'1.2rem'} className='text-blue-2' />
+                                </div>
+                                <div
+                                    className={`text-md shadow-yellow-1 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    <TbBrandJavascript size={'1.2rem'} className='text-yellow-1' />
+                                </div>
+                                <div
+                                    className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-blue-1`}>
+                                    <FaReact size={'1.2rem'} className='text-blue-1' />
+                                </div>
+                                <div
+                                    className={`text-md shadow-blue-3 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    <SiChakraui size={'1.2rem'} className='text-blue-3' />
+                                </div>
+                                <div
+                                    className={`text-md shadow-blue-2 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    <SiSwiper size={'1.2rem'} className='text-blue-2' />
+                                </div>
+                                <div
+                                    className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-purple-1`}>
+                                    <SiRedux size={'1.2rem'} className='text-purple-1' />
+                                </div>
+                                <div
+                                    className={`text-md shadow-orange-1 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    <IoLogoFirebase size={'1.2rem'} className='text-orange-1' />
+                                </div>
+                            </div>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide className='shadow-purple-1 rounded shadow-lg'>
+                    <SwiperSlide className='rounded shadow-lg shadow-purple-1'>
                         <Image
-                            src='/project-1.png'
-                            className='w-full rounded'
+                            src='/rental.png'
+                            className='w-full rounded sm:h-[10rem] lg:h-[15rem]'
                             alt='Project 1'
                             width={420}
                             height={320}
@@ -97,12 +144,37 @@ export default function SwiperProject() {
                             priority
                         />
                         <div className='flex flex-col items-center justify-center gap-2 px-4 py-2 text-center'>
-                            <p className='text-xl font-bold'>Movie Project</p>
-                            <p className='text-justify text-base text-gray-700'>
-                                lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
-                                loremloremloremlorem
+                            <p className='text-xl font-bold'>Rental Car</p>
+                            <p className='text-center text-base text-gray-700'>
+                                This project is a car rental website that have features on this website to search for cars that
+                                are available for rent.
                             </p>
-                            <FaReact size={'1rem'} className='text-center' />
+                            <div className='mb-4 flex flex-row flex-wrap items-center justify-center gap-2'>
+                                <div
+                                    className={`text-md shadow-blue-2 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    <FaCss3Alt size={'1.2rem'} className='text-blue-2' />
+                                </div>
+                                <div
+                                    className={`text-md shadow-yellow-1 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    <TbBrandJavascript size={'1.2rem'} className='text-yellow-1' />
+                                </div>
+                                <div
+                                    className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-blue-1`}>
+                                    <FaReact size={'1.2rem'} className='text-blue-1' />
+                                </div>
+                                <div
+                                    className={`text-md shadow-blue-3 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    <SiChakraui size={'1.2rem'} className='text-blue-3' />
+                                </div>
+                                <div
+                                    className={`text-md shadow-blue-2 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    <SiSwiper size={'1.2rem'} className='text-blue-2' />
+                                </div>
+                                <div
+                                    className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-purple-1`}>
+                                    <SiRedux size={'1.2rem'} className='text-purple-1' />
+                                </div>
+                            </div>
                         </div>
                     </SwiperSlide>
                 </Swiper>

@@ -1,8 +1,8 @@
 'use client';
 
-export default function Header({ className, text, title, children }) {
+export default function Header({ container, className, text, title, children }) {
     return (
-    <div>
+    <div className={`${container}`}>
         <h1
             className={`${className} mb-1 text-lg text-center font-raleway font-bold text-purple-1`}>
             {text || children}
