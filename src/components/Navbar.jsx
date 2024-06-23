@@ -96,21 +96,21 @@ export default function Navbar() {
 
             <Dialog as='div' className='lg:hidden' open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                 <div className='fixed inset-0 z-10' />
-                <Dialog.Panel className='fixed inset-y-0 right-0 z-10 w-2/4 overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
+                <Dialog.Panel className='fixed inset-y-0 right-0 z-10 w-2/4 overflow-y-auto bg-white px-4 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
                     <div className='flex items-center justify-between'>
-                        <div className='flex items-end gap-2'>
+                        <div className='flex items-end gap-1'>
                             <a href='/'>
                                 <Image
                                     className='relative'
                                     src='/logo maulana.png'
                                     alt='Maul Logo'
-                                    width={45}
-                                    height={15}
+                                    width={70}
+                                    height={20}
                                     quality={100}
                                     priority
                                 />
                             </a>
-                            <p className='text-md font-unbounded text-purple-1'>portfolio</p>
+                            <p className='text-sm font-unbounded text-purple-1'>portfolio</p>
                         </div>
                         <button
                             type='button'
@@ -164,7 +164,7 @@ export default function Navbar() {
                                         <RiLoginCircleLine className='h-5 w-5' />
                                     </div>
                                 </a>
-                                <Button className={'rounded-lg bg-black'}>Download CV</Button>
+                                <Button className={'rounded-lg text-sm bg-black'}>Download CV</Button>
                             </div>
                         </div>
                     </div>

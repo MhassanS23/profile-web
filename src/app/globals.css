@@ -55,16 +55,6 @@ body {
 /* FOOTER */
 
 footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    height: 100%;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
     background: #100d1f;
     color: white;
     border-top-left-radius: 2rem;
@@ -77,24 +67,6 @@ footer a{
     color: white;
 }
 
-/* RESPONSIVE */
-@media (max-width: 1199.98px) {
-
-    footer{
-        padding-left: 4rem;
-        padding-right: 4rem;
-        gap: 3rem;
-    }
-}
-
-@media (max-width: 991.98px) {
-    footer{
-        flex-direction: column;
-        gap: 2rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-}
 
 @layer utilities {
     .text-balance {

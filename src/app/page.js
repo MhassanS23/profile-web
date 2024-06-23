@@ -72,7 +72,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className='mb-[1rem] mt-4 flex sm:h-[100%] lg:h-screen w-full flex-col items-center justify-center gap-2 rounded-xl bg-blue-1 text-white sm:h-[100%] sm:px-4 sm:py-4 lg:px-12 lg:py-2'>
+            <div className='mb-[1rem] mt-4 flex sm:h-[100%] lg:h-screen w-full flex-col items-center justify-center gap-2 rounded-md bg-blue-1 text-white sm:h-[100%] sm:px-4 sm:py-4 lg:px-12 lg:py-2'>
                 <Header text={`biography`} title={'Who am I?'} />
                 <div className='mb-[1rem] mt-2 flex w-full items-center text-white sm:flex-col sm:gap-4 lg:flex-row lg:gap-[5rem]'>
                     <div className='rounded-full sm:h-[12rem] sm:w-[12rem] md:h-[15rem] md:w-[15rem] lg:h-[20rem] lg:w-[20rem]'>
