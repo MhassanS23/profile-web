@@ -41,7 +41,7 @@ export default function TabProject() {
                                         quality={90}
                                         priority
                                     />
-                                    <div className='flex w-full flex-col gap-2 px-6 pb-4 sm:text-justify lg:text-left'>
+                                    <div className='flex w-full flex-col items-center gap-2 px-6 pb-4 sm:text-justify lg:text-left'>
                                         <div className='font raleway text-center text-lg font-bold text-black'>Backend Team</div>
                                         <p className={`text-md mb-1 text-center font-raleway font-medium text-black`}>
                                             This project is about creating an airplane ticket booking application from login,
@@ -51,21 +51,28 @@ export default function TabProject() {
                                             Alhamdulillah, our team which is a combination with the frontend team received the
                                             best team award.
                                         </p>
+
+                                        <a
+                                            href='https://github.com/C1-FlyId/c1-be'
+                                            className='text-body-6 rounded-2xl bg-blue-1 px-4 py-1 font-raleway font-bold font-medium text-white shadow-md shadow-blue-1'>
+                                            see website
+                                        </a>
+
                                         <div className='mb-4 flex flex-row flex-wrap items-center justify-center gap-2'>
                                             <div
-                                                className={`text-md shadow-green-1 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                                className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-green-1`}>
                                                 <FaNodeJs size={'1.2rem'} className='text-green-1' />
                                             </div>
                                             <div
-                                                className={`text-md shadow-yellow-1 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                                className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-yellow-1`}>
                                                 <SiJavascript size={'1.2rem'} className='text-yellow-1' />
                                             </div>
                                             <div
-                                                className={`text-md shadow-blue-4 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                                className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-blue-4`}>
                                                 <SiPostgresql size={'1.2rem'} className='text-blue-4' />
                                             </div>
                                             <div
-                                                className={`text-md shadow-blue-4 shadow-green-2 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                                className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-blue-4 shadow-green-2`}>
                                                 <SiSwagger size={'1.2rem'} className='text-green-2' />
                                             </div>
                                         </div>

@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import Image from 'next/image';
 
+
 // ICONS
 import { FaReact, FaBootstrap, FaCss3Alt } from 'react-icons/fa';
 import { TbBrandJavascript } from 'react-icons/tb';
@@ -59,19 +60,24 @@ export default function SwiperProject() {
                                 quality={90}
                                 priority
                             />
-                            <div className='flex flex-col items-center justify-center gap-2 px-4 py-2 text-center'>
+                            <div className='flex flex-col items-center justify-center gap-2 px-4 py-2 text-center h-[15rem]'>
                                 <p className='text-xl font-bold'>Todo List</p>
                                 <p className='text-center text-base text-gray-700'>
                                     This website is used to make it easier for us to organize our activities by listing our
                                     activities in a day.
                                 </p>
+                                <a
+                                    href='https://to-do-self-sigma.vercel.app/'
+                                    className='text-body-6 rounded-2xl bg-blue-1 mb-6 px-4 py-1 font-raleway font-bold font-medium text-white shadow-md shadow-blue-1'>
+                                    see website
+                                </a>
                                 <div className='mb-4 flex flex-row flex-wrap items-center justify-center gap-2'>
                                     <div
                                         className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-purple shadow-blue-1`}>
                                         <FaReact size={'1.2rem'} className='text-blue-1' />
                                     </div>
                                     <div
-                                        className={`text-md shadow-yellow-1 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                        className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-yellow-1`}>
                                         <SiJavascript size={'1.2rem'} className='text-yellow-1' />
                                     </div>
                                     <div
@@ -79,7 +85,7 @@ export default function SwiperProject() {
                                         <FaBootstrap size={'1.2rem'} className='text-purple-1' />
                                     </div>
                                     <div
-                                        className={`text-md shadow-blue-2 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                        className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-blue-2`}>
                                         <FaCss3Alt size={'1.2rem'} className='text-blue-2' />
                                     </div>
                                 </div>
@@ -96,18 +102,23 @@ export default function SwiperProject() {
                             quality={90}
                             priority
                         />
-                        <div className='flex flex-col items-center justify-center gap-2 px-4 py-2 text-center'>
+                        <div className='flex flex-col items-center justify-center gap-2 px-4 py-2 text-center h-[15rem]'>
                             <p className='text-xl font-bold'>Movie Project</p>
                             <p className='text-center text-base text-gray-700'>
                                 This project is a website that makes it easy for us to find information about a movie.
                             </p>
+                            <a
+                                href='https://portofolio-hassan.vercel.app/'
+                                className='text-body-6 rounded-2xl bg-blue-1 mb-6 px-4 py-1 font-raleway font-bold font-medium text-white shadow-md shadow-blue-1'>
+                                see website
+                            </a>
                             <div className='mb-4 flex flex-row flex-wrap items-center justify-center gap-2'>
                                 <div
-                                    className={`text-md shadow-blue-2 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-blue-2`}>
                                     <FaCss3Alt size={'1.2rem'} className='text-blue-2' />
                                 </div>
                                 <div
-                                    className={`text-md shadow-yellow-1 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-yellow-1`}>
                                     <TbBrandJavascript size={'1.2rem'} className='text-yellow-1' />
                                 </div>
                                 <div
@@ -115,11 +126,11 @@ export default function SwiperProject() {
                                     <FaReact size={'1.2rem'} className='text-blue-1' />
                                 </div>
                                 <div
-                                    className={`text-md shadow-blue-3 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-blue-3`}>
                                     <SiChakraui size={'1.2rem'} className='text-blue-3' />
                                 </div>
                                 <div
-                                    className={`text-md shadow-blue-2 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-blue-2`}>
                                     <SiSwiper size={'1.2rem'} className='text-blue-2' />
                                 </div>
                                 <div
@@ -127,7 +138,7 @@ export default function SwiperProject() {
                                     <SiRedux size={'1.2rem'} className='text-purple-1' />
                                 </div>
                                 <div
-                                    className={`text-md shadow-orange-1 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-orange-1`}>
                                     <IoLogoFirebase size={'1.2rem'} className='text-orange-1' />
                                 </div>
                             </div>
@@ -143,19 +154,24 @@ export default function SwiperProject() {
                             quality={90}
                             priority
                         />
-                        <div className='flex flex-col items-center justify-center gap-2 px-4 py-2 text-center'>
+                        <div className='flex flex-col items-center justify-center gap-2 px-4 py-2 text-center h-[15rem]'>
                             <p className='text-xl font-bold'>Rental Car</p>
                             <p className='text-center text-base text-gray-700'>
                                 This project is a car rental website that have features on this website to search for cars that
                                 are available for rent.
                             </p>
+                            <a
+                                href='https://sewo-mobil.vercel.app/'
+                                className='text-body-6 rounded-2xl mb-6 bg-blue-1 px-4 py-1 font-raleway font-bold font-medium text-white shadow-md shadow-blue-1'>
+                                see website
+                            </a>
                             <div className='mb-4 flex flex-row flex-wrap items-center justify-center gap-2'>
                                 <div
-                                    className={`text-md shadow-blue-2 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-blue-2`}>
                                     <FaCss3Alt size={'1.2rem'} className='text-blue-2' />
                                 </div>
                                 <div
-                                    className={`text-md shadow-yellow-1 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-yellow-1`}>
                                     <TbBrandJavascript size={'1.2rem'} className='text-yellow-1' />
                                 </div>
                                 <div
@@ -163,11 +179,11 @@ export default function SwiperProject() {
                                     <FaReact size={'1.2rem'} className='text-blue-1' />
                                 </div>
                                 <div
-                                    className={`text-md shadow-blue-3 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-blue-3`}>
                                     <SiChakraui size={'1.2rem'} className='text-blue-3' />
                                 </div>
                                 <div
-                                    className={`text-md shadow-blue-2 cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg`}>
+                                    className={`text-md cursor-pointer rounded-full bg-white px-2 py-2 font-raleway text-black shadow-lg shadow-blue-2`}>
                                     <SiSwiper size={'1.2rem'} className='text-blue-2' />
                                 </div>
                                 <div

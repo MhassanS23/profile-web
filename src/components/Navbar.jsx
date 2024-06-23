@@ -12,28 +12,22 @@ import { RiCustomerService2Fill, RiContactsBook2Fill, RiMenu2Line, RiCloseFill, 
 
 const products = [
     {
-        name: 'Homepage',
+        name: 'About',
         description: 'Get a better information in our website',
         href: '#',
         icon: AiFillHome,
     },
     {
-        name: 'Our Service',
+        name: 'Portfolio',
         description: 'Services provided at waroenk bromo',
         href: '#',
         icon: RiCustomerService2Fill,
     },
     {
-        name: 'Why Us',
+        name: 'Contact',
         description: 'Reasons why customers should choose waroenk bromo',
         href: '#',
         icon: AiFillQuestionCircle,
-    },
-    {
-        name: 'Contact',
-        description: 'Waroenk bromo contact information',
-        href: '#',
-        icon: RiContactsBook2Fill,
     },
 ];
 function classNames(...classes) {
@@ -61,7 +55,8 @@ export default function Navbar() {
     }, []);
 
     return (
-        <header className={`${navActive ? 'bg-white opacity-100' : 'bg-white opacity-80'} shadow-xl border-2 rounded-br-xl rounded-bl-xl fixed z-[2] w-full transition duration-150 py-2`}>
+        <header
+            className={`${navActive ? 'bg-white opacity-100' : 'bg-white opacity-80'} fixed z-[2] w-full rounded-bl-xl rounded-br-xl border-2 py-2 shadow-xl transition duration-150`}>
             <nav
                 className='mx-auto flex max-w-7xl items-center justify-between font-raleway font-black sm:px-4 lg:px-4'
                 aria-label='Global'>
@@ -77,7 +72,7 @@ export default function Navbar() {
                             priority
                         />
                     </a>
-                    <p className='text-purple-1 text-md font-unbounded'>portfolio</p>
+                    <p className='text-md font-unbounded text-purple-1'>portfolio</p>
                 </div>
 
                 <div className='flex px-2 lg:hidden'>
@@ -103,16 +98,20 @@ export default function Navbar() {
                 <div className='fixed inset-0 z-10' />
                 <Dialog.Panel className='fixed inset-y-0 right-0 z-10 w-2/4 overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
                     <div className='flex items-center justify-between'>
-                        <a href='#' className='-m-1.5 p-1.5'>
-                            <Image
-                                className='relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert'
-                                src='/maul.png'
-                                alt='Maul Logo'
-                                width={60}
-                                height={15}
-                                priority
-                            />
-                        </a>
+                        <div className='flex items-end gap-2'>
+                            <a href='/'>
+                                <Image
+                                    className='relative'
+                                    src='/logo maulana.png'
+                                    alt='Maul Logo'
+                                    width={45}
+                                    height={15}
+                                    quality={100}
+                                    priority
+                                />
+                            </a>
+                            <p className='text-md font-unbounded text-purple-1'>portfolio</p>
+                        </div>
                         <button
                             type='button'
                             className='-m-2.5 rounded-md p-2.5 text-gray-700'
@@ -165,11 +164,7 @@ export default function Navbar() {
                                         <RiLoginCircleLine className='h-5 w-5' />
                                     </div>
                                 </a>
-                                <a
-                                    href='/register'
-                                    className='rounded-full px-4 py-2 text-center text-sm font-semibold leading-6'>
-                                    Daftar
-                                </a>
+                                <Button className={'rounded-lg bg-black'}>Download CV</Button>
                             </div>
                         </div>
                     </div>
